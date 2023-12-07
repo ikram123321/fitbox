@@ -17,7 +17,7 @@ if (mysqli_num_rows($res) == 1) {
     header("Location: dash.php");
 } else {
     echo "<script>alert('incorrect user name or password')</script>";
-    echo "<script>window.location.href='http://localhost:8080/fitbox/admin/'</script>";
+    echo "<script>window.location.href='http://localhost:8080/myfitbox-master/admin/index.html'</script>";
 }
 
 ?>

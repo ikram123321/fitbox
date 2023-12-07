@@ -6,7 +6,7 @@ include "connect.php";
 <html lang="en">
 <head>
     <style>
-        img {
+        .imgCat {
             width: 205px;
             height: 150px;
             margin-bottom: 10px;
@@ -52,9 +52,8 @@ include "connect.php";
                                     <input type="text" class="form-control" name="edit_descrcat"
                                            value="<?php echo $row['descrip_cat']; ?>" placeholder="Description de la catégorie">
                                     <label for="fileup">Image catégorie</label>
-                                    <div class="img">
-                                        <img src="<?php echo $row['image_cat']; ?>"/>
-                                    </div>
+                                    <div class="img"><?php  echo '<img class="imgCat" src="./' . ($row['image_cat']) . '"/>'; ?></div>
+
                                     <label for="fileup">Modifier image de Categorie</label>
                                     <input type="file" class="form-control" id="fileup" name="fileup">
                                 </div>

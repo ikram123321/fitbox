@@ -268,7 +268,7 @@ include('connect.php');
                   <h3 class="font-size-lg text-uppercase cs-from-left cs-delay-1"></h3>
                   <h2 class="display-2 mb-lg-5 pb-3 cs-from-left text-light">Changer votre style</h2>
                   <div class="mb-4 cs-scale-up cs-delay-2">
-                    <a href="shop-catalog.html" class="btn btn-primary btn-lg">Voir nos plats</a>
+                    <a href="nosplats.php" class="btn btn-primary btn-lg">Voir nos plats</a>
                   </div>
                 </div>
               </div>
@@ -282,7 +282,7 @@ include('connect.php');
                 <div class="col-lg-6 offset-lg-1 offset-xl-0 pb-4 pb-md-6">
                   <h2 class="display-2 mb-lg-5 pb-3 text-light cs-scale-down">Varieté des plats</h2>
                   <div class="mb-4 cs-scale-down cs-delay-2">
-                    <a href="shop-catalog.html" class="btn btn-primary btn-lg">Voir plus</a>
+                    <a href="nosplats.php" class="btn btn-primary btn-lg">Voir plus</a>
                   </div>
                 </div>
               </div>
@@ -297,7 +297,7 @@ include('connect.php');
                   <h3 class="font-size-lg text-uppercase cs-from-left cs-delay-1">Faciliter les choses et</h3>
                   <h2 class="display-2 mb-lg-5 pb-3 cs-from-left text-light">Planifier votre semaine</h2>
                   <div class="mb-4 cs-scale-up cs-delay-2">
-                    <a href="shop-catalog.html" class="btn btn-primary btn-lg">Commander</a>
+                    <a href="nosplats.php" class="btn btn-primary btn-lg">Commander</a>
                   </div>
                 </div>
               </div>
@@ -470,7 +470,7 @@ include('connect.php');
        </div>
          </div>
           <div class="text-center pt-4 pt-md-5">
-            <a href="shop-catalog.html" class="btn btn-outline-primary btn-lg">Voir tous les plats </a>
+            <a href="nosplats.php" class="btn btn-outline-primary btn-lg">Voir tous les plats </a>
           </div>
         </div>
   

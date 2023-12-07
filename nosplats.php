@@ -61,10 +61,110 @@ if (isset($_SESSION['nom_user'])) {
 </head>
 
 <body>
+<style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
 
+        .container {
+            margin-top: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+          
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .nomplat {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .info-value {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+      /* Update the styles for the button in your existing CSS */
+
+.commanderbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+.commanderbtn button {
+    background-color: #ffc107; /* Yellow color */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.commanderbtn button:hover {
+    background-color: #ff9800; /* Orange color on hover */
+}
+
+/* Add more styles or modify as needed */
+
+.card-info {
+    margin-top: 10px;
+}
+
+.info-label, .info-value {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    color: #555;
+}
+
+.info-value {
+    font-weight: bold;
+    color: #333;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover;
+}
+
+  
+    </style>
     <div class="container">
         <div class="row mt-3 align-items-center">
-            <div class="col-4"><a href="homepage.html"><img src="img/logo.png" class="logo img-fluid" alt=""></a> </div>
+            <div class="col-4"><a href="index.php"><img src="img/logo.png" class="logo img-fluid" alt=""></a> </div>
             <div class="searchbox col-4">
                 <form class="d-flex">
                     <input class="form-control border-0 search rounded-pill" type="search" placeholder="Rechercher des plats" aria-label="Search">
@@ -168,24 +268,39 @@ if (isset($_SESSION['nom_user'])) {
                         <div class="card">
 
                             <img class="card-img-top get_id" src="<?php echo $ligne2['image'] ?>" alt="Card image cap" data-toggle='modal' data-target='#modalContactForm<?php echo $ligne2['id_plat'] ?>'>
-                            <div class="card-body">
-                                <h5 class="card-title nomplat"><?php echo $ligne2['nomplat'] ?></h5>
-                                <div class="row">
-                                    <div class="btn-group info col-4 ">
-                                        <span class="infotext mr-2">Calories</span>
-                                        <span class="nbrcalorie"><?php echo $ligne2['nbr_calories'] ?> Kcal</span>
-                                    </div>
+                            <div class="card">
+    <div class="card-body">
+        <h5 class="card-title nomplat"><?php echo $ligne2['nomplat'] ?></h5>
+        <div class="row">
+           <!-- ... (other HTML code) ... -->
 
-                                    <div class="btn-group info col-4">
-                                        <span class="infotext mr-2">Graisses</span>
-                                        <span class="nbrcalorie">test</span>
-                                    </div>
-                                    <div class="btn-group info col-4 ">
-                                        <span class="infotext mr-2">Proteins</span>
-                                        <span class="nbrcalorie">test</span>
-                                    </div>
-                                </div>
-                            </div>
+<div class="col-4">
+    <div class="card-info text-center">
+        <span class="info-label">Calories</span>
+        <span class="info-value nbrcalorie"><?php echo $ligne2['nbr_calories'] ?> Kcal</span>
+    </div>
+</div>
+
+<div class="col-4">
+    <div class="card-info text-center">
+        <span class="info-label">Graisses</span>
+        <span class="info-value graisse"><?php echo $ligne2['graisse'] ?></span>
+    </div>
+</div>
+
+<div class="col-4">
+    <div class="card-info text-center">
+        <span class="info-label">Protéines</span>
+        <span class="info-value proteine"><?php echo $ligne2['proteine'] ?></span>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</div>
+
                             <input type="hidden" name="hiddenname" value="<?php echo $ligne2['nomplat']  ?>">
                             <input type="hidden" name="hiddenprice" value="<?php echo $ligne2['prix']  ?>">
                             <div class="input-group rounded-pill mb-3 commanderbtn">

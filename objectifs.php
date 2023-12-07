@@ -221,7 +221,7 @@ include "header.php";
                     </div>
                 </div>
         </div>
-    <?php
+    <?php 
             }
             echo "</div>";
 
@@ -267,7 +267,7 @@ font-family: 'Montserrat', sans-serif;
 
     <!-- Main Theme Styles + Bootstrap-->
     <link rel="stylesheet" media="screen" href="css/bootstrap.css">
-    <!-- Footer -->
+    <!-- Footer 
     <footer class="cs-footer pt-sm-5 pt-4">
       
       <div class="container pt-3">
@@ -318,7 +318,7 @@ font-family: 'Montserrat', sans-serif;
               
             </ul>
           </div>
-          <div class="col-sm-6 col-lg-3  col-md-3 pb-2 pb-lg-0 mb-4">
+         <!-- <div class="col-sm-6 col-lg-3  col-md-3 pb-2 pb-lg-0 mb-4">
             <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Nous suivre sur</h3>
             
             <a href="#" class="social-btn sb-solid sb-light mr-2">
@@ -346,19 +346,13 @@ font-family: 'Montserrat', sans-serif;
         </div>
       </div>
     </footer>
-
-
-    <!-- Back to top button-->
-    <a class="btn-scroll-top" href="#top" data-scroll data-fixed-element>
-      <span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span>
-      <i class="btn-scroll-top-icon cxi-angle-up"></i>
-    </a>
-
-
+-->
     
-
-
-
+    <section>
+         <div>
+            <?php include('footer.php') ?> 
+         </div>
+      </section>
 
 </body>
 </html>

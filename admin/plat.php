@@ -1,5 +1,5 @@
 <style>
- .imgplat{width: 205px; height: 150px; margin-bottom: 10px; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; border:6px solid #f7f7f7;}
+ .imgPlat{width: 205px; height: 150px; margin-bottom: 10px; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; border:6px solid #f7f7f7;}
 </style>
 <?php
 include "connect.php";
@@ -149,7 +149,8 @@ $result= mysqli_query($con, $query);
                                 <td><?php  echo $row['nbr_calories']; ?></td>
                                 <td><?php  echo $row['id_cat']; ?></td>
                                 <td><?php  echo $row['prix']; ?></td>
-                               <div class=""><td clas=><?php  echo  '<img class=" imgplat"src="./'.( $row['image'] ).'"/>';?></td></div>
+                                <div class=""><td clas=><?php  echo  '<img class=" imgplat"src="./'.( $row['image'] ).'"/>';?></td></div>
+
                                 <td>
                                     <form action="modif_plat.php" method="POST">
                                         <input type="hidden" name="modi_id" value="<?php echo $row['id_plat']; ?>">

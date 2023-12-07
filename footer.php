@@ -71,31 +71,31 @@ font-family: 'Montserrat', sans-serif;
             <h3 class="h6 mb-2 pb-1 text-uppercase text-light pl-xl-6">Objectifs</h3>
             <ul class="nav nav-light flex-column pl-xl-6">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Perte du poids</a>
+                <a href="objectifs.php" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Perte du poids</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Mantien du poids</a>
+                <a href="objectifs.php" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Mantien du poids</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Gain du poids</a>
+                <a href="objectifs.php" class="nav-link mr-lg-0 mr-sm-4 p-0 font-weight-normal">Gain du poids</a>
               </li>
               
             </ul>
           </div>
-          <div class="col-sm-6 col-lg-3  col-md-3 pb-2 pb-lg-0 mb-4">
-            <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Nous suivre sur</h3>
-            
-            <a href="#" class="social-btn sb-solid sb-light mr-2">
-            <i class="fa fa-facebook"></i>
-            </a>
-            <a href="#" class="social-btn sb-solid sb-light mr-2">
-            <i class="fa fa-instagram"></i>
-            </a>
-            <a href="#" class="social-btn sb-solid sb-light mr-2">
-            <i class="fa fa-twitter"></i>
-            </a>
-            
-          </div>
+          <div class="col-sm-6 col-lg-3 col-md-3 pb-2 pb-lg-0 mb-4">
+    <h3 class="h6 mb-2 pb-1 text-uppercase text-light">Nous suivre sur</h3>
+    
+    <a href="https://www.facebook.com/your-facebook-page" class="social-btn sb-solid sb-light mr-2" target="_blank">
+        <i class="fa fa-facebook"></i>
+    </a>
+    <a href="https://www.instagram.com/your-instagram-account" class="social-btn sb-solid sb-light mr-2" target="_blank">
+        <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://twitter.com/your-twitter-account" class="social-btn sb-solid sb-light mr-2" target="_blank">
+        <i class="fa fa-twitter"></i>
+    </a>
+</div>
+
          
         </div>
          </div>

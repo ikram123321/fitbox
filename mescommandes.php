@@ -298,16 +298,5 @@ echo"            <div class='card border-bottom'>
 
 
 
-    <!-- Back to top button-->
-    <a class="btn-scroll-top" href="#top" data-scroll data-fixed-element>
-      <span class="btn-scroll-top-tooltip text-muted font-size-sm mr-2">Top</span>
-      <i class="btn-scroll-top-icon cxi-angle-up"></i>
-    </a>
-
-  
-    <?php 
-
-include("footer.php")
-?>
   </body>
 </html>

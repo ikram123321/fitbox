@@ -6,7 +6,7 @@ include "connect.php";
 <html lang="en">
 <head>
 <style>
- .imgcat{width: 205px; height: 150px; margin-bottom: 10px; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; border:6px solid #f7f7f7;}
+ .imgCat{width: 205px; height: 150px; margin-bottom: 10px; box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important; border:6px solid #f7f7f7;}
 </style>
 <?php include_once("header.php") ?></php>
 <title>Fitbox.tn - Ajout Catégorie</title>
@@ -50,7 +50,7 @@ include "connect.php";
     </br>
     </br>
     <label for="descr">Description de Categorie</label>
-    <input type="text" class="form-control" id="descr" name="desc" placeholder="Descriptio de Categorie">
+    <input type="text" class="form-control" id="descr" name="desc" placeholder="Description de Categorie">
     </br>
     </br>
     <label for="fileup">Image de Categorie</label>
@@ -102,9 +102,9 @@ include "connect.php";
                     <thead>
                         <tr>
                             <th> Id Catégorie </th>
-                            <th> Nom Catégorie </th>
-                            <th> Description Catégorie </th>
-                            <th> Image Categrorie </th>
+                            <th> Nom  </th>
+                            <th> Description </th>
+                            <th> Image </th>
                             <th>Modifier</th>
                             <th>Supprimer</th>
                         </tr>
@@ -121,7 +121,7 @@ include "connect.php";
                                 <td><?php  echo $row['nom_cat']; ?></td>
                                 <td><?php  echo $row['descrip_cat']; ?></td>
 
-                               <div class="img"><td><?php  echo  '<img src="./'.( $row['image_cat'] ).'"/>';?></td></div>
+                               <div class="img"><td><?php  echo  '<img class=" imgCat" src="./'.( $row['image_cat'] ).'"/>';?></td></div>
           
                                 <td>
                                     <form action="edit_categorie.php" method="post">

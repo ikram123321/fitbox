@@ -124,7 +124,7 @@
                     <i class="cxi-bag font-size-base mr-2"></i>
                     <span>Mes commandes</span>
                   </a>
-                  <a href="bilan.php" class="dropdown-item d-flex align-items-center">
+                  <a href="bilaninfo.php" class="dropdown-item d-flex align-items-center">
                     <i class="cxi-info font-size-base mr-2"></i>
                     <span>suivi du poids</span>
                   </a>

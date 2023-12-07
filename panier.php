@@ -21,8 +21,6 @@ include "connect.php";
   <title>Fitbox.tn Panier</title>
 
 
-  
-  
  
   
 </head>
@@ -208,7 +206,7 @@ else {  ?>
         <div class="col-lg-8 pr-lg-6">
           <div class="d-flex align-items-center justify-content-between pb-2 mb-4">
             <h1 class="mb-0">Checkout</h1>
-            <a href="nosplats.html"><strong>Back to shopping</strong></a>
+            <a href="nosplats.php"><strong>Back to shopping</strong></a>
           </div>
 
           
@@ -342,7 +340,7 @@ else {  ?>
                     <input type="radio" class="custom-control-input" id="cc" name="payment" value="credit-card" checked>
                     <label for="cc" class="custom-control-label d-flex align-items-center">
                       <strong class="d-block mr-3">Credit card</strong>
-                      <img src="" width="108" alt="Credit cards">
+                      <img src="./img/credit-card.png" width="30" height="30" alt="credit card">
                     </label>
                   </div>
                 </div>
@@ -411,7 +409,7 @@ else {  ?>
               <div class="form-group">
                 <label for="promo-code">Appliquer un code promo</label>
                 <div class="input-group input-group-lg">
-                  <input type="text" id="promo-code" class="form-control" placeholder="Saisir le code promotionnel">
+                  <input type="text" id="promo-code" class="form-control" placeholder="Saisir le code promotion">
                   <div class="input-group-append">
                     <button type="button" class="btn btn-primary" name="test2">&nbsp;&nbsp;Appliquer&nbsp;&nbsp;</button>
                   </div>
